@@ -1,0 +1,162 @@
+body,html{
+  position: relative;
+}
+
+p{
+    font-size: 14px;
+    margin: 5px 0 10px;
+    line-height: 1;
+}
+
+
+#root{
+    width:1000px;
+    margin:0 auto;
+}
+.menu{
+    background-color: #c5d8ff;
+    padding: 20px;
+    border-bottom: 5px #3d5cff solid;
+}
+.menu a{
+    display: block;
+    float: left;
+    margin: 0 20px 10px 0;
+    color: #3d5cff;
+    text-decoration: none;
+    max-width: 200px;
+    text-align: center;
+    font-weight: 600;
+}
+.menu a.active,
+.menu a:hover{
+    text-decoration: underline;
+}
+.menu:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.contentBlock{
+    padding: 40px 20px;
+}
+
+.main-calendar{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.main-calendar .main-calendar-month-name{
+    background-color: #c5d8ff;
+    width: 294px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+.main-calendar .main-calendar-month-name .prev,
+.main-calendar .main-calendar-month-name .next{
+    display: block;
+    float: right;
+    width: 20px;
+    line-height: 1;
+    height: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.main-calendar .main-calendar-month-name .prev:before,
+.main-calendar .main-calendar-month-name .next:before{
+    content: "<";
+    display: inline;
+}
+.main-calendar .main-calendar-month-name .next:before{
+    content: ">";
+}
+.main-calendar .main-calendar-month-name .prev{
+    float: left;
+}
+.main-calendar .main-calendar-month-name .next:hover,
+.main-calendar .main-calendar-month-name .prev:hover{
+    font-weight: 900;
+}
+.main-calendar-table{
+    border-spacing:0;
+    width:294px;
+}
+.main-calendar-table .main-table-td{
+    background-color: #686868;
+    border: 1px #686868 solid;
+    text-align: center;
+    padding: 3px 6px;
+    font-size: 12px;
+    cursor: pointer;
+    width:28px;
+    height:28px;
+}
+.main-calendar-table .main-table-td.prev-month{
+    color:#cecece; 
+}
+.main-calendar-table .main-table-td.this-month{
+    color:#fff;
+    background-color: #5a5a5a; 
+    border: 1px #5a5a5a solid;
+}
+.main-calendar-table .main-table-td.next-month{
+    color:#cecece; 
+}
+
+.main-calendar-table .main-table-td.active,
+.main-calendar-table .main-table-td:hover {
+    background-color: #cecece;
+    border: 1px #fff solid;
+    color: #212121;
+}
+.main-calendar-table .main-table-td.prev-month:hover,
+.main-calendar-table .main-table-td.next-month:hover{
+    background-color: #686868;
+    border: 1px #fff solid;
+    color:#cecece;
+}
+
+
+
+.spiral-block{
+    margin-top:80px;
+}
+.main-spiral-table{
+    border-spacing:1;
+}
+.main-spiral-table .spiral-table-td{
+    background-color: #686868;
+    border: 1px #686868 solid;
+    text-align: center;
+    padding: 3px 6px;
+    font-size: 12px;
+    cursor: pointer;
+    width:42px;
+    height:42px;
+}
+.main-spiral-table .spiral-table-td.prev-month{
+    color:#cecece; 
+}
+.main-spiral-table .spiral-table-td{
+    color:#fff;
+    background-color: #5a5a5a; 
+    border: 1px #5a5a5a solid;
+}
+
+
+
+
+
+.treeResultBlock:after{
+    content: "";
+    display:block;
+    clear: both;
+}
+.treeResultBlock .element{
+    float: left;
+    min-width: 150px;
+    margin-right: 40px;
+}
